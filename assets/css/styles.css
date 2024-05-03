@@ -755,7 +755,7 @@ the website, in dark theme
 }
 
 .footer__subscribe {
-  background-color: var(--first-color-lighten);
+  background-color: var(--body-color);
   padding: 0.75rem;
   display: flex;
   justify-content: space-between;
@@ -815,34 +815,31 @@ the website, in dark theme
   margin: 5rem 0 1rem;
 }
 
+
 /*=============== SCROLL UP ===============*/
-.scrollup {
+.scrollup{
   position: fixed;
-  background-color: var(--first-color);
   right: 1rem;
   bottom: -30%;
+  background-color: transparent;
+  filter: drop-shadow(0 2px 4px rgb(20, 220, 63));
   display: inline-flex;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
+  padding: .35rem;
+  color: var(--title-color);
+  font-size: 1.1rem;
   z-index: var(--z-tooltip);
-  opacity: 0.8;
-  transition: 0.4s;
+  transition: .3s;
 }
 
-.scrollup__icon {
-  font-size: 1rem;
-  color: #fff;
-}
-
-.scrollup:hover {
-  background-color: var(--first-color-alt);
-  opacity: 1;
+.scrollup:hover{
+  transform: translateY(-.25rem);
 }
 
 /* Show Scroll Up*/
-.show-scroll {
-  bottom: 3rem;
+.show-scroll{
+  bottom: 2.5rem;
 }
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
@@ -1021,7 +1018,7 @@ the website, in dark theme
     padding: 1rem 0 4rem;
   }
   .questions__title {
-    text-align: initial;
+    text-align: center;
   }
   .questions__group {
     row-gap: 2rem;
