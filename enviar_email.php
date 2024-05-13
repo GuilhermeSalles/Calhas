@@ -1,23 +1,36 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Receber os dados do formulário
-    $email = $_POST['email'];
-    $assunto = $_POST['assunto'];
-    $mensagem = $_POST['mensagem'];
+    // Recupera os dados do formulário
+    $email = $_POST["email"];
+    $assunto = $_POST["assunto"];
+    $mensagem = $_POST["mensagem"];
 
-    // Configurar o e-mail de destino
-    $destinatario = 'vendas@calhastaquaral.com.br';
+    // E-mail de destino
+    $to = 'vendas@calhastaquaral.com.br';
 
-    // Montar o corpo do e-mail
-    $corpo_email = "Email: $email\n";
-    $corpo_email .= "Assunto: $assunto\n";
-    $corpo_email .= "Mensagem: $mensagem\n";
+    // Assunto do e-mail
+    $subject = $assunto;
 
-    // Enviar o e-mail
-    if (mail($destinatario, 'Novo contato pelo formulário do Site', $corpo_email)) {
-        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "index.html";</script>';
+    // Construir a mensagem
+    $message = "E-mail enviado por: $email\n\n";
+    $message .= "Mensagem:\n$mensagem";
+
+    // Cabeçalhos do e-mail
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\r\n";
+
+    // Configurações do servidor SMTP
+    ini_set('SMTP', 'smtp.hostinger.com');
+    ini_set('smtp_port', 465);
+    ini_set('sendmail_from', 'vendas@calhastaquaral.com.br');
+
+    // Enviar e-mail
+    if (mail($to, $subject, $message, $headers)) {
+        echo '<script>alert("Mensagem enviada com sucesso!"); window.location.href = "../";</script>';
     } else {
-        echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "index.html";</script>';
+        echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde."); window.location.href = "../";</script>';
     }
 }
 ?>
