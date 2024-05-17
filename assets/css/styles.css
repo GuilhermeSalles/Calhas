@@ -206,12 +206,12 @@ the website, in dark theme
 .nav__logo,
 .nav__toggle,
 .nav__close {
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .nav__logo {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 650;
   letter-spacing: -1px;
   display: inline-flex;
   align-items: center;
@@ -674,6 +674,7 @@ the website, in dark theme
 
 .contact__icon {
   font-size: 1.25rem;
+  color: #120a8f;
 }
 
 .contact__inputs {
@@ -737,6 +738,10 @@ the website, in dark theme
   z-index: 10;
 }
 
+.contacttels{
+  color: var(--text-color);
+}
+
 /*=============== FOOTER ===============*/
 .footer__container {
   row-gap: 3rem;
@@ -746,9 +751,9 @@ the website, in dark theme
   display: inline-flex;
   align-items: center;
   column-gap: 0.5rem;
-  color: var(--title-color);
+  color: var(--text-color);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 650;
   letter-spacing: -1px;
   margin-bottom: var(--mb-2-5);
   transition: 0.3s;
