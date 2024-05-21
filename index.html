@@ -57,11 +57,14 @@
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
+        <!-- Container da imagem no topo -->
+        <div class="header__top-image">
+            <img src="assets/img/imgtopo.png" alt="Imagem de topo" class="header__image" loading="lazy">
+        </div>
+
         <nav class="nav container">
-            <a href="../" class="nav__logo">
-                <!-- Adicionando atributo alt à imagem para SEO -->
-                <img src="assets/img/LOGO.png" alt="Logo da Calhas Taquaral" width="50px" height="50px" loading="eager">
-                Calhas Taquaral
+            <a href="\" class="nav__logo">
+                <img src="assets/img/LOGO.png" alt="Logo da Calhas Taquaral" width="450" height="50" loading="eager">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -91,8 +94,7 @@
 
             <div class="nav__btns">
                 <!-- Theme change button -->
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
-
+                <i class="ri-moon-line change-theme" style="display: none;" id="theme-button"></i>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-line"></i>
                 </div>
@@ -101,13 +103,14 @@
     </header>
 
 
+
     <main class="main">
         <!--==================== HOME ====================-->
         <section class="home" id="home">
             <div class="home__container container grid">
                 <!-- Adicionando atributo alt à imagem para SEO -->
                 <img src="assets/img/home.png" alt="Calhas Taquaral - Instalação Profissional" class="home__img"
-                    loading="eager">
+                    loading="lazy">
 
                 <div class="home__data">
                     <h1 class="home__title">
@@ -115,9 +118,27 @@
                     </h1>
                     <p class="home__description">
                         Instale calhas de qualidade em sua residência e <strong>telhas de aço galvanizado</strong> com a
-                        <strong>Calhas Taquaral</strong>,
-                        adicionando <strong>proteção e beleza</strong> aos seus espaços.
+                        <strong>Calhas Taquaral</strong>, adicionando <strong>proteção e beleza</strong> aos seus
+                        espaços.
                     </p>
+                    <div class="about__details">
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Fabricação Própria sob medida!
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Garantia e Qualidade.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Equipe altamente qualificada e especializada.
+                        </p>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Menor custo da região em Calhas em Aço Galvanizado.
+                        </p>
+                    </div>
                     <!-- Tornando o botão mais descritivo para SEO -->
                     <a href="https://wa.me/5519993932817/?text=Ol%C3%A1%20acessei%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"
                         class="button button--flex" aria-label="Solicitar orçamento">
@@ -158,42 +179,20 @@
                         <strong>calhas</strong>, <strong>rufos</strong>, <strong>condutores</strong>,
                         <strong>telhas</strong> e <strong>coifas</strong> em aço galvanizado e galvalume.
 
-                        <br>
-                        <br>
+                        <br><br>
 
                         Nossa equipe altamente qualificada garante resultados impecáveis, destacando-se pela introdução
                         da pintura eletrostática, garantindo alta qualidade e durabilidade. Nosso compromisso é proteger
                         e valorizar sua propriedade, mantendo-a segura e protegida das intempéries.
                     </p>
-
-                    <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Fabricação Própria sob medida!
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Garantia e Qualidade.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Equipe altamente qualificada e especializada.
-                        </p>
-                        <p class="about__details-description">
-                            <i class="ri-checkbox-fill about__details-icon"></i>
-                            Menor custo da região em Calhas em Aço Galvanizado.
-                        </p>
-                    </div>
-
-                    <!-- Tornando o texto do link mais descritivo para SEO -->
+                    <!-- Tornando o botão mais descritivo para SEO -->
                     <a href="https://wa.me/5519993932817/?text=Ol%C3%A1%20acessei%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"
-                        class="button--link button--flex" aria-label="Solicitar orçamento">
+                        class="button button--flex" aria-label="Solicitar orçamento">
                         <i class="ri-whatsapp-fill button__icon"></i> Fazer orçamento
                     </a>
                 </div>
             </div>
         </section>
-
 
         <!--==================== STEPS ====================-->
         <section class="steps section container">
@@ -237,7 +236,6 @@
                 </div>
             </div>
         </section>
-
         <!--==================== FAQS ====================-->
         <section class="questions section" id="faqs">
             <h2 class="section__title-center questions__title container">
@@ -259,32 +257,34 @@
                                 CALHA MOLDURA
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/calhas/moldura.png" alt="Exemplo de calhas" loading="lazy">
+                                <img src="assets/img/calhas/moldura.png" alt="Exemplo de calhas moldura" loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 CALHA AMERICANA
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/calhas/americana.png" alt="Exemplo de calhas" loading="lazy">
+                                <img src="assets/img/calhas/americana.png" alt="Exemplo de calhas americana"
+                                    loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 CALHA QUADRADA
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/calhas/quadrada.png" alt="Exemplo de calhas" loading="lazy">
+                                <img src="assets/img/calhas/quadrada.png" alt="Exemplo de calhas quadrada"
+                                    loading="lazy">
                             </div>
 
                             <p class="questions__description">
-                                CALHA ÃGUA FURTADA
+                                CALHA ÁGUA FURTADA
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/calhas/furtada.png" alt="Exemplo de calhas" loading="lazy">
+                                <img src="assets/img/calhas/furtada.png" alt="Exemplo de calhas água furtada"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
-
 
                     <div class="questions__item">
                         <header class="questions__header">
@@ -299,21 +299,22 @@
                                 RUFO EXTERNO
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/rufos/externo.png" alt="Exemplo de rufos" loading="lazy">
+                                <img src="assets/img/rufos/externo.png" alt="Exemplo de rufos externo" loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 RUFO CAPA
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/rufos/capa.png" alt="Exemplo de rufos" loading="lazy">
+                                <img src="assets/img/rufos/capa.png" alt="Exemplo de rufos capa" loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 RUFO PINGADEIRA
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/rufos/pingadeira.png" alt="Exemplo de rufos" loading="lazy">
+                                <img src="assets/img/rufos/pingadeira.png" alt="Exemplo de rufos pingadeira"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -331,11 +332,10 @@
                                 Aqui você encontrará as tabelas de cores da pintura eletrostática, garantindo alta
                                 qualidade e durabilidade.
                             </p>
-                            <img src="assets/img/services/cores.jpeg" alt="Tabelas de cores da pintura eletrostática"
+                            <img src="assets/img/services/cores.png" alt="Tabelas de cores da pintura eletrostática"
                                 loading="lazy">
                         </div>
                     </div>
-
                 </div>
 
                 <div class="questions__group">
@@ -352,7 +352,7 @@
                                 CONDUTOR RETANGULAR
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/condutores/retangular.png" alt="Exemplo de condutores"
+                                <img src="assets/img/condutores/retangular.png" alt="Exemplo de condutores retangular"
                                     loading="lazy">
                             </div>
 
@@ -360,7 +360,8 @@
                                 CONDUTOR REDONDO
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/condutores/redondo.png" alt="Exemplo de condutores" loading="lazy">
+                                <img src="assets/img/condutores/redondo.png" alt="Exemplo de condutores redondo"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -378,7 +379,7 @@
                                 TELHAS METÁLICAS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/telhas/TELHASMETALICAS.png" alt="Exemplo tipo Telhas"
+                                <img src="assets/img/telhas/TELHASMETALICAS.png" alt="Exemplo de telhas metálicas"
                                     loading="lazy">
                             </div>
 
@@ -386,30 +387,32 @@
                                 TELHAS GALVANIZADAS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/telhas/TELHASGALVANIZADAS.png" alt="Exemplo tipo Telhas"
+                                <img src="assets/img/telhas/TELHASGALVANIZADAS.png" alt="Exemplo de telhas galvanizadas"
                                     loading="lazy">
                             </div>
 
                             <p class="questions__description">
-                                TELHAS COR
+                                TELHAS COLORIDAS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/telhas/TELHASCOR.png" alt="Exemplo tipo Telhas" loading="lazy">
+                                <img src="assets/img/telhas/TELHASCOR.png" alt="Exemplo de telhas coloridas"
+                                    loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 TELHAS TERMOACÚSTICAS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/telhas/TELHAS TERMO.png" alt="Exemplo tipo Telhas" loading="lazy">
+                                <img src="assets/img/telhas/TELHAS TERMO.png" alt="Exemplo de telhas termoacústicas"
+                                    loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 ACESSÓRIOS PARA TELHAS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/telhas/ACESSORIOSPARATELHAS.png" alt="Exemplo de calha tipo Telhas"
-                                    loading="lazy">
+                                <img src="assets/img/telhas/ACESSORIOSPARATELHAS.png"
+                                    alt="Exemplo de acessórios para telhas" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -427,28 +430,27 @@
                                 COIFAS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/coifas/coifa01.png" alt="Tabelas de coifas" loading="lazy">
+                                <img src="assets/img/coifas/coifa01.png" alt="Exemplo de coifas" loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 REDUTOR DE TUBULAÇÃO COM CHAPÉU CHINÊS
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/coifas/coifas02.png" alt="Tabelas de coifas" loading="lazy">
+                                <img src="assets/img/coifas/coifas02.png"
+                                    alt="Exemplo de redutor de tubulação com chapéu chinês" loading="lazy">
                             </div>
 
                             <p class="questions__description">
                                 CURVAS PARA TUBULAÇÃO
                             </p>
                             <div class="image-container">
-                                <img src="assets/img/coifas/coifas03.png" alt="Tabelas de coifas" loading="lazy">
+                                <img src="assets/img/coifas/coifas03.png" alt="Exemplo de curvas para tubulação"
+                                    loading="lazy">
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -459,7 +461,7 @@
             <div class="contact__container grid">
                 <div class="contact__box">
                     <h2 class="section__title">
-                        Entre em contato <br>conosco hoje através <br>de qualquer uma das informações fornecidas
+                        Entre em contato <br>conosco através <br>dos nossos canais de atendimento!
                     </h2>
 
                     <div class="contact__data">
@@ -496,21 +498,21 @@
                 <form action="enviar_email.php" method="post" class="contact__form">
                     <div class="contact__inputs">
                         <div class="contact__content">
-                            <!-- Adicionando atributo alt à tag de descrição para acessibilidade -->
+                            <!-- Adicionando atributo aria-label para acessibilidade -->
                             <input type="email" name="email" placeholder=" " class="contact__input"
                                 aria-label="Seu endereço de e-mail">
                             <label for="" class="contact__label">Email</label>
                         </div>
 
                         <div class="contact__content">
-                            <!-- Adicionando atributo alt à tag de descrição para acessibilidade -->
+                            <!-- Adicionando atributo aria-label para acessibilidade -->
                             <input type="text" name="assunto" placeholder=" " class="contact__input"
                                 aria-label="Assunto da mensagem">
                             <label for="" class="contact__label">Assunto</label>
                         </div>
 
                         <div class="contact__content contact__area">
-                            <!-- Adicionando atributo alt à tag de descrição para acessibilidade -->
+                            <!-- Adicionando atributo aria-label para acessibilidade -->
                             <textarea name="mensagem" placeholder=" " class="contact__input"
                                 aria-label="Sua mensagem"></textarea>
                             <label for="" class="contact__label">Mensagem</label>
@@ -526,15 +528,13 @@
         </section>
 
     </main>
-
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
         <div class="footer__container container grid">
             <div class="footer__content">
-                <a href="#" class="footer__logo">
+                <a href="#home" class="footer__logo">
                     <!-- Adicionando atributo alt à imagem do logo para SEO -->
-                    <img src="assets/img/LOGO.png" alt="Logo da Calhas Taquaral" width="60px" height="60px"
-                        loading="lazy">Calhas Taquaral
+                    <img src="assets/img/LOGO.png" alt="Logo da Calhas Taquaral" loading="lazy">
                 </a>
             </div>
 
@@ -542,10 +542,10 @@
                 <h3 class="footer__title">Nosso endereço</h3>
 
                 <ul class="footer__data">
-                    <!-- Adicionando atributo alt à tag de descrição para acessibilidade -->
-                    <li class="footer__information">R. Dr. Armando Sales de Oliveira, 645</li>
+                    <!-- Adicionando atributos de descrição para acessibilidade -->
+                    <li class="footer__information">R. Francisco Pereira Coutinho, 314</li>
                     <li class="footer__information">Parque Taquaral,</li>
-                    <li class="footer__information">Campinas - SP</li>
+                    <li class="footer__information">Campinas - SP <br>13087-120</li>
                 </ul>
             </div>
 
@@ -553,20 +553,24 @@
                 <h3 class="footer__title">Entre em Contato</h3>
 
                 <ul class="footer__data">
-                    <!-- Adicionando atributo alt à tag de descrição para acessibilidade -->
-                    <li class="footer__information">(19) 3255-7911 /<br> 3305-9500</li>
+                    <!-- Adicionando atributos de descrição para acessibilidade -->
+                    <li class="footer__information">(19) 3255-7911 /<br> 3305-9500 <br> <br> <i
+                            class="ri-whatsapp-line"></i> WhatsApp: <br>
+                        <a href="https://wa.me/5519993932817/?text=Ol%C3%A1%20acessei%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"
+                            class="contacttels" aria-label="Enviar mensagem para WhatsApp (19) 99393-2817">(19)
+                            99393-2817</a>
+                    </li>
 
                     <div class="footer__social">
                         <!-- Adicionando atributos alt e title às tags de links para acessibilidade -->
-                        <a href="https://www.facebook.com/" class="footer__social-link" alt="Facebook" title="Facebook">
+                        <a href="https://www.facebook.com/" class="footer__social-link" title="Facebook">
                             <i class="ri-facebook-fill"></i>
                         </a>
-                        <a href="https://www.instagram.com/" class="footer__social-link" alt="Instagram"
-                            title="Instagram">
+                        <a href="https://www.instagram.com/" class="footer__social-link" title="Instagram">
                             <i class="ri-instagram-line"></i>
                         </a>
                         <a href="https://wa.me/5519993932817/?text=Ol%C3%A1%20acessei%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"
-                            class="footer__social-link" alt="Instagram" title="Instagram">
+                            class="footer__social-link" title="WhatsApp">
                             <i class="ri-whatsapp-line"></i>
                         </a>
                     </div>
@@ -574,12 +578,10 @@
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">
-                    Cartões Aceitos
-                </h3>
+                <h3 class="footer__title">Cartões Aceitos</h3>
 
                 <div class="footer__cards">
-                    <!-- Adicionando atributo alt à tags de imagens dos cartões para SEO -->
+                    <!-- Adicionando atributo alt às tags de imagens dos cartões para SEO -->
                     <img src="assets/img/card1.png" alt="Cartão de crédito 1" width="75" height="50"
                         class="footer__card" loading="lazy">
                     <img src="assets/img/card2.png" alt="Cartão de crédito 2" width="75" height="50"
@@ -592,15 +594,18 @@
             </div>
         </div>
 
-        <p class="footer__copy"> <a href="https://www.instagram.com/yguilhermeb/" class="footer__social-link"><i
-                    class="ri-instagram-line"></i> Guilherme Baltazar </a>&#169; All rights reserved</p>
+        <p class="footer__copy">
+            <a href="https://www.instagram.com/yguilhermeb/" class="footer__social-link"><i
+                    class="ri-instagram-line"></i> Guilherme Baltazar</a>
+            &#169; Todos os direitos reservados
+        </p>
     </footer>
 
     <!--========== SCROLL UP ==========-->
     <a href="https://wa.me/5519993932817/?text=Ol%C3%A1%20acessei%20o%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento!"
         class="scrollup" id="scroll-up" aria-label="Ir para o topo">
         <!-- Adicionando atributo alt à imagem do botão de scroll para SEO -->
-        <img src="assets/img/wpp.png" width="60px" height="60px" alt="Ícone do WhatsApp" loading="lazy">
+        <img src="assets/img/wpp.png" width="60" height="60" alt="Ícone do WhatsApp" loading="lazy">
     </a>
 
     <!--=============== SCROLL REVEAL ===============-->
