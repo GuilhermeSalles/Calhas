@@ -56,11 +56,11 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-946784408"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-946784408');
+    gtag('config', 'AW-946784408');
 </script>
 
 </head>
@@ -514,21 +514,21 @@
                         <div class="contact__content">
                             <!-- Adicionando atributo aria-label para acessibilidade -->
                             <input type="email" name="email" placeholder=" " class="contact__input"
-                                aria-label="Seu endereço de e-mail">
+                                aria-label="Seu endereço de e-mail" required>
                             <label for="" class="contact__label">Email</label>
                         </div>
 
                         <div class="contact__content">
                             <!-- Adicionando atributo aria-label para acessibilidade -->
                             <input type="text" name="assunto" placeholder=" " class="contact__input"
-                                aria-label="Assunto da mensagem">
+                                aria-label="Assunto da mensagem" required>
                             <label for="" class="contact__label">Assunto</label>
                         </div>
 
                         <div class="contact__content contact__area">
                             <!-- Adicionando atributo aria-label para acessibilidade -->
-                            <textarea name="mensagem" placeholder=" " class="contact__input"
-                                aria-label="Sua mensagem"></textarea>
+                            <textarea name="mensagem" placeholder=" " class="contact__input" aria-label="Sua mensagem"
+                                required></textarea>
                             <label for="" class="contact__label">Mensagem</label>
                         </div>
                     </div>
